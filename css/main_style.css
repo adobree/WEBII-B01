@@ -1,0 +1,274 @@
+
+.container-fluid
+{
+    display: inline-block;
+}
+
+
+.egyes
+{
+    position: relative;
+}
+
+
+.kettes
+{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    color: white;
+    text-align: center;
+}
+
+.harmas
+{
+    position: absolute;
+    top: 100px;
+    left: 450px;
+    right: 40px;
+    color: white;
+    text-align: center;
+}
+
+.belso {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+.btn_comment {
+    border: none;
+    color: white;
+    padding: 4px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    margin-left: 0px;
+    transition-duration: 1s;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border: 1px solid #565ae3;
+    border-radius: 4px;
+}
+.btn_comment:hover
+{
+    border-radius: 15px;
+    background-color: #008CBA;
+    color: white;
+
+
+}
+
+.comment
+{
+    width: 350px;
+    height: 30px;
+    padding: 6px 10px;
+    margin: -5px 8px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    margin-left: 0px;
+}
+.comment_box {
+    padding: 10px;
+}
+
+textarea {
+    resize: none;
+}
+.comment_text {
+
+    resize: none;
+}
+.hide
+{
+    show: none;
+
+}
+.kep1
+{
+    margin: auto auto;
+    width: 550px;
+    height: 300px;
+}
+
+.kulso
+{
+    display: INLINE-BLOCK;
+    padding: 10px;
+}
+
+
+.mas
+{
+    position: relative;
+}
+
+.re
+{
+    float: right;
+}
+
+.reg2
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.szoveg
+{
+    text-align: justify;
+}
+
+aside
+{
+    float: left;
+    width: 160px;
+    margin: 0;
+    padding: 1em;
+    position: absolute;
+
+
+}
+a.link
+{
+    vertical-align: middle;
+    width:6em;
+    text-decoration:none; 
+    color:white;
+    background-color:Teal;
+    padding:0.2em 0.6em;
+    border-right:1px solid white;
+    border-radius: 4px;
+
+}
+a.menu
+{
+
+    float:left;
+    width:8em;
+    text-decoration:none;
+    color:white;
+    background-color:Teal;
+    padding:0.2em 0.6em;
+    border-right:1px solid white;
+    transition-duration: 1.2s;
+
+
+}
+
+a.selected { background-color: #5A5F60; }
+
+a:hover
+{
+    background-color: yellow;
+    color: teal ;
+    transition-duration: 0.6s;
+
+}
+
+body.nyit_background
+{
+    background-image: url('//images/kep1_bkg.jpg');
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+body.hir_background
+{
+    background-image: url('//images/kep4_bkg.jpg');
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+
+div#user { float: right; }
+
+h1.header
+{
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+header, footer
+{
+    padding: 1.5em;
+    color: white;
+    background-color: Teal;
+    clear: left;
+}
+img.like
+{
+    width: 20px;
+    align: left;
+    padding: 5px;
+    vertical-align: middle;
+
+}
+img.like:hover
+{
+    width: 22px;
+    transition-duration: 1s;
+    padding: 4px;
+}
+label
+{
+    display: inline-block;
+
+}
+li { display:inline }
+
+section {
+    margin-left: 190px;
+    border-left: 1px teal;
+    padding: 1em;
+}
+ul {
+    float:left;
+    width:100%; /* A menü az alatta levő szövegtől elválik, birtokolja a teljes vízszintes sávját. */
+    padding:0;
+    margin:0;
+    list-style-type:none;
+    background-color: Teal;
+}
+
+
+
+
+
+p#zold
+{
+    color:#89C23D;
+    font-family: Montserrat;
+    font-size: 24px;
+    text-align:center;
+}
+td,th
+{
+    text-align:left;
+    font-family: Montserrat;
+    font-size: 16px;
+    color: #333333;
+}
+h2#kek,h1#kek
+{
+    color:#164899;
+    font-family: Montserrat;
+    font-size: 28px;
+    text-align:center;
+}
+

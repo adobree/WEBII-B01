@@ -1,0 +1,23 @@
+.error {
+    color: black;
+    font-family: Montserrat;
+    font-size: 150px;
+    text-align: center;
+    align-content: center;
+    margin-top: 10px;
+    transition-duration: 6s;
+
+
+}
+.error:hover {
+    color: red;
+    text-align: center;
+    margin-top: 10px;
+    transition-duration: 1s;
+}
+h2 {
+    font-family: Montserrat;
+    font-size: 40px;
+    border: 4px;
+    text-align: center;
+}
