@@ -24,16 +24,14 @@
         <div class="em" id="user"><em><?= $_SESSION['bejelentkezett'].$_SESSION['userlastname']." ".$_SESSION['userfirstname'].$_SESSION['user']  ?></em></div>
     </header>
 
-		<div class="mas">
-		<aside>
-               <?php echo Menu::getMenu($viewData['selectedItems']); ?>
-        </aside>
+		<div class="main_conteiner">
+            <aside>
+                <?php echo Menu::getMenu($viewData['selectedItems']); ?>
+            </aside>
+            <section>
+                <?php if($viewData['render']) include($viewData['render']); ?>
+            </section>
         </div>
-        <section>
-            <?php if($viewData['render']) include($viewData['render']); ?>
-        </section>
-		<br>
-		<br>
         <footer>&copy; Lorem, ipsum dolor. <?= date("Y"); ?></footer>
     </body>
 </html>
