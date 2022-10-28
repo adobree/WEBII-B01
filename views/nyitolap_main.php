@@ -1,7 +1,5 @@
-<body>
- <div class="kulso">
- <div class="belso">
-Hello
-</div> 				
-</div>
-</body>
+<h2>
+    <br>Üdvözöljük az új rendszerünkben!<br>
+    <br>Jó munkát kívánunk a rendszerünkkel!<br>
+    <br>Kezdhet ...<br>
+</h2>
