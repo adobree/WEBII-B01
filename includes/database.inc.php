@@ -1,6 +1,6 @@
 <?php
     define('HOST', 'pfw.ddns.net');
-    define('DATABASE', 'web2');
+    define('DATABASE', 'webiib01');
     define('USER', 'webprog');
     define('PASSWORD', 'WebProg2022@');
     
