@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soap-enc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:soap-env="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://localhost/adastra/soap/szerver/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://localhost/adastra/soap/szerver/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://localhost/adastra/soap/szerver/">
+      <xsd:complexType name="Teruletek">
+        <xsd:all>
+          <xsd:element name="hibakod" type="xsd:int" minOccurs="0" maxOccurs="1"/>
+          <xsd:element name="uzenet" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+          <xsd:element name="teruletek" type="tns:TeruletArray" minOccurs="0" maxOccurs="1"/>
+        </xsd:all>
+      </xsd:complexType>
+      <xsd:complexType name="Terulet">
+        <xsd:all>
+          <xsd:element name="terulet" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+        </xsd:all>
+      </xsd:complexType>
+      <xsd:complexType name="Tudosok">
+        <xsd:all>
+          <xsd:element name="hibakod" type="xsd:int" minOccurs="0" maxOccurs="1"/>
+          <xsd:element name="uzenet" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+          <xsd:element name="terulet" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+          <xsd:element name="tudosok" type="tns:TudosArray" minOccurs="0" maxOccurs="1"/>
+        </xsd:all>
+      </xsd:complexType>
+      <xsd:complexType name="Tudos">
+        <xsd:all>
+          <xsd:element name="nev" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+        </xsd:all>
+      </xsd:complexType>
+      <xsd:complexType name="Eloadasok">
+        <xsd:all>
+          <xsd:element name="hibakod" type="xsd:int" minOccurs="0" maxOccurs="1"/>
+          <xsd:element name="uzenet" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+          <xsd:element name="eloadasok" type="tns:EloadasArray" minOccurs="0" maxOccurs="1"/>
+        </xsd:all>
+      </xsd:complexType>
+      <xsd:complexType name="Eloadas">
+        <xsd:all>
+          <xsd:element name="cim" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+          <xsd:element name="ido" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+        </xsd:all>
+      </xsd:complexType>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="getteruletRequest"/>
+  <wsdl:message name="getteruletResponse">
+    <wsdl:part name="getteruletReturn" type="tns:Teruletek"/>
+  </wsdl:message>
+  <wsdl:message name="gettudosRequest">
+    <wsdl:part name="terulet" type="xsd:string"/>
+  </wsdl:message>
+  <wsdl:message name="gettudosResponse">
+    <wsdl:part name="gettudosReturn" type="tns:Tudosok"/>
+  </wsdl:message>
+  <wsdl:message name="geteloadasRequest">
+    <wsdl:part name="nev" type="xsd:string"/>
+    <wsdl:part name="terulet" type="xsd:string"/>
+  </wsdl:message>
+  <wsdl:message name="geteloadasResponse">
+    <wsdl:part name="geteloadasReturn" type="tns:Eloadasok"/>
+  </wsdl:message>
+  <wsdl:portType name="MindentudasPortType">
+    <wsdl:operation name="getterulet">
+      <wsdl:documentation/>
+      <wsdl:input message="tns:getteruletRequest"/>
+      <wsdl:output message="tns:getteruletResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="gettudos">
+      <wsdl:documentation/>
+      <wsdl:input message="tns:gettudosRequest"/>
+      <wsdl:output message="tns:gettudosResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="geteloadas">
+      <wsdl:documentation/>
+      <wsdl:input message="tns:geteloadasRequest"/>
+      <wsdl:output message="tns:geteloadasResponse"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="MindentudasBinding" type="tns:MindentudasPortType">
+    <soap-env:binding xmlns="http://schemas.xmlsoap.org/wsdl/soap/" style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="getterulet">
+      <soap-env:operation xmlns="http://schemas.xmlsoap.org/wsdl/soap/" soapAction="http://localhost/adastra/soap/szerver/szerver.php?method=getterulet" style="rpc"/>
+      <wsdl:input>
+        <soap-env:body xmlns="http://schemas.xmlsoap.org/wsdl/soap/" use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap-env:body xmlns="http://schemas.xmlsoap.org/wsdl/soap/" use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="gettudos">
+      <soap-env:operation xmlns="http://schemas.xmlsoap.org/wsdl/soap/" soapAction="http://localhost/adastra/soap/szerver/szerver.php?method=gettudos" style="rpc"/>
+      <wsdl:input>
+        <soap-env:body xmlns="http://schemas.xmlsoap.org/wsdl/soap/" use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap-env:body xmlns="http://schemas.xmlsoap.org/wsdl/soap/" use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="geteloadas">
+      <soap-env:operation xmlns="http://schemas.xmlsoap.org/wsdl/soap/" soapAction="http://localhost/adastra/soap/szerver/szerver.php?method=geteloadas" style="rpc"/>
+      <wsdl:input>
+        <soap-env:body xmlns="http://schemas.xmlsoap.org/wsdl/soap/" use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap-env:body xmlns="http://schemas.xmlsoap.org/wsdl/soap/" use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Mindentudas">
+    <wsdl:documentation/>
+    <wsdl:port name="MindentudasPort" binding="tns:MindentudasBinding">
+      <soap-env:address location="http://localhost/adastra/soap/szerver/szerver.php"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
