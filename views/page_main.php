@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf8_hungarian_ci">
-        <title>teszt</title>
+        <title>Kovács Ádám és Nagy Gábor</title>
         <link rel="stylesheet" type="text/css" href="<?php echo SITE_ROOT?>css/main_style.css">
         <link rel="icon" type="image/x-icon" href="<?php echo SITE_ROOT?>images/favicon.ico">
         <?php if($viewData['style']) echo '<link rel="stylesheet" type="text/css" href="'.$viewData['style'].'">'; ?>
@@ -20,7 +20,7 @@
     ?>
 
     <header>
-        <h1 class="header">Mindentudás Egyeteme</h1>
+        <h1 class="header">Web programozás II. - Beadandó feladat 1.</h1>
         <div class="em" id="user"><em><?= $_SESSION['bejelentkezett'].$_SESSION['userlastname']." ".$_SESSION['userfirstname'].$_SESSION['user']  ?></em></div>
     </header>
 
@@ -34,6 +34,6 @@
         </section>
 		<br>
 		<br>
-        <footer>&copy; Ad Astra Kft. <?= date("Y"); ?></footer>
+        <footer>&copy; Kovács Ádám és Nagy Gábor || NJE <?= date("Y"); ?></footer>
     </body>
 </html>
