@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="<?php echo SITE_ROOT?>css/mnb.css">
 </head>
-<body class="mnb_bkg"></body>
+<body class="mnb_bkg">
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
@@ -87,6 +87,11 @@
     ?>
 
 </form>
+
+
+<!--ELSŐ LEKÉRDEZÉS VÉGE-->
+
+
 
     <form action="" method="post" id="form2">
         <br><br>
@@ -217,3 +222,4 @@ const myChart = new Chart(ctx, {
     }
 });
 </script>
+</body>

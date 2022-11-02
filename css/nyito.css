@@ -1,0 +1,58 @@
+body {
+  color: white;
+}
+
+.main {
+  background-color: Teal;
+  border-radius: 20px;
+}
+
+.cim {
+  padding: 1em;
+  font-size: 30px;
+  text-align: center;
+  justify-content: center;
+}
+
+.osztott {
+  display: inline-flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.jobb {
+  min-height: 100px;
+  width: 50%;
+  padding: 20px;
+  display: inline-flex;
+  justify-content: center;
+}
+
+.bal {
+  width: 50%;
+  padding: 20px;
+}
+
+.justifyText {
+  width: 100%;
+  height: 100%;
+  text-align: justify;
+}
+
+.bord-rad-yt-container{
+  width: 560px;
+  height: 315px;
+  margin:0 auto;
+  border:0px;
+  padding:0px;
+  display:inline-block;
+  overflow:hidden;
+  border-radius:20px;
+  z-index:2;
+  position:relative;
+}
+
+.textNormal {
+  padding: 20px;
+  text-align: justify;
+}
