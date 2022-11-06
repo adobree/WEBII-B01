@@ -9,14 +9,8 @@
 	
         <div class="col-md-12">
             <div class="card">
-		
                 <div class="card-body">
-					<br>
-					<br>
 <h2 style="text-align:center;" id="kek"><b>NEM MINDEGY, MILYEN NYOMOT HAGYUNK!</b></h2>
-
-
-
 <table>
     <tbody>
 
