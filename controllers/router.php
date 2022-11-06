@@ -14,7 +14,28 @@ $page = "nyitolap";
 $subpage = "";
 $vars = array();
 
-$request = $_SERVER['QUERY_STRING'];
+function getServerQueryString()
+{
+    if(isset($_SERVER['QUERY_STRING']))
+    {
+        return $_SERVER['QUERY_STRING'];
+    }
+    elseif(isset($_SERVER['REQUEST_URI']))
+    {
+        $xpl = explode('/', $_SERVER['REQUEST_URI']);
+
+        $baseName = $xpl[array_key_last($xpl)];
+
+        if(strpos($baseName, '?') !== false)
+        {
+             return substr($baseName, strpos($baseName, '?')+1);
+        }
+    }
+
+    return null;
+}
+
+$request = getServerQueryString();
 
 if($request != "")
 {
@@ -58,7 +79,9 @@ spl_autoload_register(function($className) {
     if(file_exists($file))
     { include_once($file); }
     else
-    { die("File '$filename' containing class '$className' not found.");    }
+    { 
+			die("File '$filename' containing class '$className' not found.");    
+		}
 });
 
 $controller->main($vars);

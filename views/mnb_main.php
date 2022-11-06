@@ -3,9 +3,9 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="<?php echo SITE_ROOT?>css/mnb.css">
+    <link rel="stylesheet" type="text/css" href="<?= SITE_ROOT?>css/mnb.css">
 </head>
-<body class="mnb_bkg">
+<body class="mnb_main">
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
@@ -52,7 +52,7 @@
 
 
 
-    <input class=mnb_btn type="submit" name="valtas" value="Váltás" form="form1"><br><br>
+    <input class="mnb_btn" type="submit" name="valtas" value="Váltás" form="form1"><br><br>
 
 
 

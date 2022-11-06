@@ -9,7 +9,7 @@
   <?php
 
   
-  $client = new SoapClient('http://localhost/adastra/soap/szerver/mindentudas.wsdl');
+  $client = new SoapClient('http://pfw.ddns.net/web1kovacsadam/soap/szerver/mindentudas.wsdl');
   
   if(!isset($teruletek))
   {

@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 
+:root {
+    --blue: #1e90ff;
+    --white: #ffffff;
+}
+
 body {
     margin-top: 0px;
     margin-bottom: 0px;
@@ -27,7 +32,7 @@ body {
     top: 0px;
     left: 0px;
     right: 0px;
-    color: white;
+    color: var(--white);
     text-align: center;
 }
 
@@ -37,7 +42,7 @@ body {
     top: 100px;
     left: 450px;
     right: 40px;
-    color: white;
+    color: var(--white);
     text-align: center;
 }
 
@@ -51,7 +56,7 @@ body {
 }
 .btn_comment {
     border: none;
-    color: white;
+    color: var(--white);
     padding: 4px 20px;
     text-align: center;
     text-decoration: none;
@@ -61,7 +66,7 @@ body {
     margin-left: 0px;
     transition-duration: 1s;
     cursor: pointer;
-    background-color: white;
+    background-color: var(--white);
     color: black;
     border: 1px solid #565ae3;
     border-radius: 4px;
@@ -70,7 +75,7 @@ body {
 {
     border-radius: 15px;
     background-color: #008CBA;
-    color: white;
+    color: var(--white);
 
 
 }
@@ -152,20 +157,20 @@ aside
     margin-top: 20px;
     position: absolute;
     border-radius: 20px;
-    background-color: Teal;
+    background-color: var(--blue);
 }
 a.link
 {
     vertical-align: middle;
     width:6em;
     text-decoration:none;
-    color:white;
+    color:var(--white);
 }
 a.menu {
     float:left;
     width:8em;
     text-decoration:none;
-    color:white;
+    color:var(--white);
     transition-duration: 1.2s;
 }
 
@@ -204,15 +209,15 @@ h1.header
 header
 {
     padding: 1.5em;
-    color: white;
-    background-color: Teal;
+    color: var(--white);
+    background-color: var(--blue);
     clear: left;
 }
 footer
 {
     padding: 1.5em;
-    color: white;
-    background-color: Teal;
+    color: var(--white);
+    background-color: var(--blue);
     clear: left;
     text-align: center;
     position: fixed;
@@ -243,7 +248,7 @@ li { display:inline }
 
 section {
     margin-left: 190px;
-    border-left: 1px teal;
+    border-left: 1px var(--blue);
     padding: 1em;
 }
 ul {
@@ -262,21 +267,21 @@ ul {
 p#zold
 {
     color:#89C23D;
-    font-family: Montserrat;
+    font-family: 'Poppins', sans-serif;
     font-size: 24px;
     text-align:center;
 }
 td,th
 {
     text-align:left;
-    font-family: Montserrat;
+    font-family: 'Poppins', sans-serif;
     font-size: 16px;
     color: #333333;
 }
 h2#kek,h1#kek
 {
     color:#164899;
-    font-family: Montserrat;
+    font-family: 'Poppins', sans-serif;
     font-size: 28px;
     text-align:center;
 }
