@@ -8,7 +8,7 @@
 	<body class="eloadas_background"></body>
   <?php
 
-  
+
   $client = new SoapClient('http://pfw.ddns.net/web1kovacsadam/soap/szerver/mindentudas.wsdl');
   
   if(!isset($teruletek))
@@ -29,7 +29,7 @@
   ?>
     
   <body>
-    <h1>Mindentudás Egyeteme előadások</h1>
+    <h2>Mindentudás Egyeteme előadások</h2>
     
 	  <form class='left' name="teruletselect" method="POST">
       <select class='select' name="terulet" onchange="javascript:teruletselect.submit();">
@@ -77,26 +77,21 @@
 		?>
 	  
 	  </form>
-		<br><br><br><br><br><br><br>
-
+		
 	  <?php
 	  }
-	  
-        
           if(isset($eloadasok))
           {
-			
-            echo "<fieldset>";
-			
-            
-			
+            echo '<div class="eredmeny_elott">Keresés eredménye:</div>';
+            echo '<div class="eredmeny">';
             foreach($eloadasok->eloadasok as $eloadas)
             {
               echo $eloadas['cim'].' - '.$eloadas['ido']."<br>";
             }
-            echo "</fieldset>";
+            echo "</div>";
           }
         ?>
     
   </body>                                                          
 </html>
+</div>

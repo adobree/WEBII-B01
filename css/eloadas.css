@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+:root {
+  --blue: #1e90ff;
+  --whiteblue: #82c1ff;
+  --blackblue: #004180;
+  --white: #ffffff;
+}
+
+body {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  font-family: 'Poppins', sans-serif;
+}
+
+h2 {
+  color: var(--blackblue);
+}
+.eredmeny_elott {
+  margin-top: 30px;
+  color: var(--blackblue);
+  font-size: 18px;
+}
+.eredmeny {
+  color: var(--white);
+  background-color: var(--blue);
+  margin-top: 10px;
+  padding: 1em;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+.kiir {
+  color: var(--white);
+  background-color: var(--whiteblue);
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 0.5em;
+  border-radius: 10px;
+  font-size: 15px;
+  text-transform: uppercase;
+  max-width: 300px;
+}
+
+select {
+  background-color: white;
+  border: thin solid var(--blackblue);
+  width: 300px;
+  border-radius: 4px;
+  display: inline-block;
+  font: inherit;
+  line-height: 1.5em;
+  padding: 0.5em 3.5em 0.5em 1em;
+  margin: 0;      
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
