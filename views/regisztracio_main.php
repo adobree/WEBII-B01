@@ -1,32 +1,22 @@
-<body class="reg_background">
+<body>
 
-<div class="reg2">
+<div class="reg_main">
 
 <form action="" method="post">
-<fieldset class="reg">
-<legend class="reg"><h2>Regisztráció</h2></legend>
-
-    <label class='reg' for="csaladi_nev">Családi név:</label>
-    <br>
-    <input class='reg' type="text" name="csaladi_nev" id="csaladi_nev"
+<fieldset>
+<legend>Regisztráció</legend>
+    <label class='reg_label' for="csaladi_nev">Családi név:</label>
+    <input class='reg_input' type="text" name="csaladi_nev" id="csaladi_nev"
     required pattern="[a-zA-Z][\-\.a-zA-Z0-9_]{3}[\-\.a-zA-Z0-9_]+"><br>
-	<br>
-	<label class='reg' for="utonev">Utónév:</label>
-    <br>
-    <input class='reg' type="text" name="utonev" id="utonev"
+	<label class='reg_label' for="utonev">Utónév:</label>
+    <input class='reg_input' type="text" name="utonev" id="utonev"
 	required pattern="[a-zA-Z][\-\.a-zA-Z0-9_]{3}[\-\.a-zA-Z0-9_]+"><br>
-    <br>
-    <label class='reg' for="bejelenkezes">Felhasználónév:</label>
-    <br>
-    <input class='reg' type="text" name="bejelentkezes" id="bejelentkezes"><br>
-    <br>
-    <label class='reg' for="jelszo">Jelszó:</label>
-    <br>
-    <input class='reg' type="password" class="re" name="jelszo" id="jelszo" 
+    <label class='reg_label' for="bejelenkezes">Felhasználónév:</label>
+    <input class='reg_input' type="text" name="bejelentkezes" id="bejelentkezes"><br>
+    <label class='reg_label' for="jelszo">Jelszó:</label>
+    <input class='reg_input' type="password" class="re" name="jelszo" id="jelszo" 
 	required pattern="[\-\.a-zA-Z0-9_]{4}[\-\.a-zA-Z0-9_]+"><br>
-    <br>
-    <input class='reg_sub' type="submit" value="Küldés">
-
+    <input class='btn_send' type="submit" value="Küldés">
 </fieldset>
 </form>
 
