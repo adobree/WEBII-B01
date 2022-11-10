@@ -113,7 +113,6 @@ img {
 .comment_box {
     padding: 10px;
 }
-
 textarea {
     resize: none;
 }
@@ -124,16 +123,12 @@ textarea {
 .hide
 {
     show: none;
-
 }
-
 .kulso
 {
     display: INLINE-BLOCK;
     padding: 10px;
 }
-
-
 .mas
 {
     position: relative;
@@ -184,47 +179,31 @@ a.menu {
     transition-duration: 1.2s;
 }
 
-a.selected { background-color: #5A5F60; }
-
 a:hover
 {
-    background-color: yellow;
-    color: teal ;
+    background-color: var(--blackblue);
     transition-duration: 0.6s;
+    border-radius: 3px;
+    padding-left: 5px;
 }
 
-body.nyit_background
-{
-    background-image: url('/adastra/images/kep1_bkg.jpg');
-    background-size: 100% 100%;
-    background-attachment: fixed;
-}
-body.hir_background
-{
-    background-image: url('/adastra/images/kep4_bkg.jpg');
-    background-size: 100% 100%;
-    background-attachment: fixed;
+div#user { 
+    float: right;
 }
 
-
-div#user { float: right; }
-
-h1.header
-{
+h1.header {
     padding: 0;
     margin: 0;
     text-align: left;
 }
 
-header
-{
+header {
     padding: 1.5em;
     color: var(--white);
     background-color: var(--blue);
     clear: left;
 }
-footer
-{
+footer {
     padding: 1.5em;
     color: var(--white);
     background-color: var(--blue);
@@ -249,12 +228,13 @@ img.like:hover
     transition-duration: 1s;
     padding: 4px;
 }
-label
-{
-    display: inline-block;
 
+label {
+    display: inline-block;
 }
-li { display:inline }
+li { 
+    display:inline;
+}
 
 section {
     margin-left: 190px;
@@ -263,35 +243,9 @@ section {
 }
 ul {
     float:left;
-    width:100%; /* A menü az alatta levő szövegtől elválik, birtokolja a teljes vízszintes sávját. */
+    width:100%; 
     padding:0;
     margin:0;
     list-style-type:none;
     padding: 10px;
-}
-
-
-
-
-
-p#zold
-{
-    color:#89C23D;
-    font-family: 'Poppins', sans-serif;
-    font-size: 24px;
-    text-align:center;
-}
-td,th
-{
-    text-align:left;
-    font-family: 'Poppins', sans-serif;
-    font-size: 16px;
-    color: #333333;
-}
-h2#kek,h1#kek
-{
-    color:#164899;
-    font-family: 'Poppins', sans-serif;
-    font-size: 28px;
-    text-align:center;
 }
