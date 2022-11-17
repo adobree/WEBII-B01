@@ -14,6 +14,25 @@ body {
   border-radius: 20px;
   margin-bottom: 30px;
 }
+.main .section-1 .image-wrapper .bord-rad-yt-container {
+  width: 100%;
+}
+.main .section-1 .image-wrapper {
+  width: 50%;
+}
+.main .section-1 {
+  display: flex;
+}
+.main .section-1 .image-wrapper { 
+  padding: 2rem;
+}
+
+.main .text {
+  padding: 1rem;
+}
+.main .section-1, .section-2, .section-3 {
+  padding: 1rem;
+}
 
 .cim {
   padding: 1em;
