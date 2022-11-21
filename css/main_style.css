@@ -131,6 +131,7 @@ textarea {
 }
 .mas
 {
+    text-align: center;
     position: relative;
 }
 
@@ -156,11 +157,12 @@ textarea {
 
 aside
 {
-    float: left;
+    /* float: left; */
     width: 160px;
-    margin-left: 20px;
-    margin-top: 20px;
-    position: absolute;
+    
+    /* margin-left: 20px; */
+    /* margin-top: 20px; */
+    /* position: absolute; */
     border-radius: 20px;
     background-color: var(--blue);
 }
@@ -171,8 +173,16 @@ a.link
     text-decoration:none;
     color:var(--white);
 }
+.navigation {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+.navigation li {
+    padding: .5rem 1rem;
+}
 a.menu {
-    float:left;
+    /* float:left; */
     width:8em;
     text-decoration:none;
     color:var(--white);
@@ -241,11 +251,40 @@ section {
     border-left: 1px var(--blue);
     padding: 1em;
 }
-ul {
+/* ul {
     float:left;
     width:100%; 
     padding:0;
     margin:0;
     list-style-type:none;
     padding: 10px;
+} */
+
+@media(max-width: 680px) {
+    .mas {
+        padding: 1rem;
+    }
+    aside {
+        width: 100%;
+    }
+}
+@media( max-width: 992px ) {
+    
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+    aside {
+        margin: auto;
+    }
+    section {
+        margin-left: 0;
+    }
+}
+@media(min-width: 993px) {
+    .mas {
+        margin-left: 1rem;
+        position: absolute;
+
+    }
 }
